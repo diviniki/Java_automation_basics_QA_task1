@@ -2,12 +2,18 @@ package org.somethings.test;
 
 //import org.junit.jupiter.api.Assertions;
 import org.somethings.service.CashbackHackService;
-import org.testng.annotations.Test;
-import org.testng.Assert;
+
+//JUnit
+import org.junit.Test;
+import org.junit.Assert;
+
+//TestNG
+//import org.testng.annotations.Test;
+//import org.testng.Assert;
 
 public class CashbackHackServiceTest {
     @Test
-    void ShouldCalculateIfZero() {
+    public void ShouldCalculateIfZero() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 0; //вводное
@@ -20,7 +26,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void ShouldCalculateIf900() {
+    public void ShouldCalculateIf900() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 900; //вводное
@@ -33,7 +39,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void ShouldCalculateIf1100() {
+    public void ShouldCalculateIf1100() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 1100; //вводное
@@ -46,7 +52,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void ShouldCalculateIfThousand() {
+    public void ShouldCalculateIfThousand() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         int amount = 1000; //вводное
